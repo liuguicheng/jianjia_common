@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * 淘淘商城自定义响应结构
+ * 自定义响应结构
  */
 public class TaotaoResult {
 
@@ -21,6 +21,7 @@ public class TaotaoResult {
 
     // 响应中的数据
     private Object data;
+
 
     public static TaotaoResult build(Integer status, String msg, Object data) {
         return new TaotaoResult(status, msg, data);
@@ -53,6 +54,8 @@ public class TaotaoResult {
         this.msg = "OK";
         this.data = data;
     }
+    
+    
 
 //    public Boolean isOK() {
 //        return this.status == 200;
