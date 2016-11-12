@@ -1,4 +1,7 @@
 package com.taotao.common.pojo;
+
+import java.util.List;
+
 /**
  * 树形控件节点格式
  * <p>Title: EUTreeNode</p>
@@ -8,6 +11,8 @@ public class EUTreeNode {
 	private long id;
 	private String text;
 	private String state;
+	private List<?> children;
+	
 	public long getId() {
 		return id;
 	}
@@ -25,6 +30,12 @@ public class EUTreeNode {
 	}
 	public void setState(String state) {
 		this.state = state;
+	}
+	public List<?> getChildren() {
+		return children;
+	}
+	public void setChildren(List<?> children) {
+		this.children = children;
 	}
 	
 }
