@@ -6,11 +6,11 @@ import java.util.List;
  * 树形控件节点格式
  * <p>Title: EUTreeNode</p>
  */
-public class EUTreeNode {
+public class EUTreeNode2 {
 
 	private long id;
 	private String text;
-	private String state;
+	private EUTreeState state;
 	private List<?> children;
 	
 	public long getId() {
@@ -31,10 +31,10 @@ public class EUTreeNode {
 	public void setChildren(List<?> children) {
 		this.children = children;
 	}
-	public String getState() {
+	public EUTreeState getState() {
 		return state;
 	}
-	public void setState(String state) {
+	public void setState(EUTreeState state) {
 		this.state = state;
 	}
 	
